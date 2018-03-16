@@ -1,8 +1,8 @@
 version: '3'
 
 services:
-  numberword.api:
-    image: numberwordapi
+  numberword:
+    image: numberword
     build:
       context: .
-      dockerfile: NumberWord.Api\Dockerfile
+      dockerfile: NumberWord.Api/Dockerfile

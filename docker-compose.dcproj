@@ -2,11 +2,11 @@
 <Project ToolsVersion="15.0" Sdk="Microsoft.Docker.Sdk">
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.0</ProjectVersion>
-    <DockerTargetOS>Windows</DockerTargetOS>
-    <ProjectGuid>88e6aab6-5060-4113-8a04-22ca780a1aae</ProjectGuid>
+    <DockerTargetOS>Linux</DockerTargetOS>
+    <ProjectGuid>860921b1-a1ca-44b1-a9ea-0668844ea45c</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
-    <DockerServiceUrl>http://{ServiceIPAddress}/api/number-word</DockerServiceUrl>
-    <DockerServiceName>numberword.api</DockerServiceName>
+    <DockerServiceUrl>http://localhost:{ServicePort}/api/number-word</DockerServiceUrl>
+    <DockerServiceName>numberword</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">
