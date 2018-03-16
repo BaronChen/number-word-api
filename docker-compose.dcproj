@@ -3,10 +3,10 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.0</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>860921b1-a1ca-44b1-a9ea-0668844ea45c</ProjectGuid>
+    <ProjectGuid>6c76b531-3c74-4056-98c7-71a710ed9b75</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>http://localhost:{ServicePort}/api/number-word</DockerServiceUrl>
-    <DockerServiceName>numberword</DockerServiceName>
+    <DockerServiceName>numberword.api</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">
