@@ -6,3 +6,5 @@ services:
     build:
       context: .
       dockerfile: NumberWord.Api/Dockerfile
+    ports:
+      - "4300:80"

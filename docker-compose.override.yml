@@ -4,5 +4,4 @@ services:
   numberword.api:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-    ports:
-      - "4300:80"
+
