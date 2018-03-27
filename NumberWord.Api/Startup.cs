@@ -25,6 +25,7 @@ namespace NumberWord.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<INumberTextConverter, NumberTextConverter>();
+            services.AddCors();
             services.AddMvc();
         }
 
@@ -36,6 +37,7 @@ namespace NumberWord.Api
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
             app.UseMvc();
         }
     }
