@@ -1,0 +1,20 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "0.1.0",
+    "linux": {
+        "command": "/bin/bash",
+        "options": {
+            "cwd": "${workspaceRoot}"
+        },
+        "tasks": [
+            {
+                "taskName": "composeForDebug",
+                "suppressTaskName": true,
+                "args": [ "-c", "sudo docker-compose -f docker-compose.dev.yml up" ],
+                "isBuildCommand": false,
+                "showOutput": "always"
+            }
+        ]
+    }
+}
