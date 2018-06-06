@@ -13,7 +13,7 @@ jobs:
             export PATH=${HOME}/google-cloud-sdk/bin:$PATH
             echo $GCLOUD_SERVICE_KEY > ${HOME}/gcloud-service-key.json
             gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
-            gcloud config set project number-text-convert
+            gcloud config set project number-2-text
             gcloud config set compute/zone australia-southeast1-a
       - setup_remote_docker:   
           docker_layer_caching: true 
@@ -27,6 +27,6 @@ jobs:
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
               gcloud auth --quiet configure-docker
               docker-compose -f docker-compose.yml build 
-              docker tag numberwordapi:v1 asia.gcr.io/number-text-convert/numberwordapi:$TAG
+              docker tag numberwordapi:v1 asia.gcr.io/number-2-text/numberwordapi:$TAG
               docker push asia.gcr.io/number-text-convert/numberwordapi
             fi
